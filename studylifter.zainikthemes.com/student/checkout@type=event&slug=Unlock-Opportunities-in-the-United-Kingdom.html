@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Studylifter -     Login
+</title>
+            
+            <!-- Open Graph meta tags for social sharing -->
+        <meta property="og:type" content="studylifter">
+        <meta property="og:title" content="Studylifter">
+        <meta property="og:description" content="Studylifter">
+        <meta property="og:image" content="../storage/uploads/Setting/3631750946496.png">
+        <meta property="og:url" content="../login.html">
+        <meta property="og:site_name" content="Studylifter">
+
+        <!-- Twitter Card meta tags for Twitter sharing -->
+        <meta name="twitter:card" content="studylifter">
+        <meta name="twitter:title" content="Studylifter">
+        <meta name="twitter:description" content="Studylifter">
+        <meta name="twitter:image" content="../storage/uploads/Setting/3631750946496.png">
+
+        <meta name="csrf-token" content="FPYmYE5I0P6Aac463sEUdigcBO2aFOVPU6pJc1Qe"/>
+    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" href="../storage/uploads/Setting/8531752142302.png" type="image/png" sizes="16x16">
+    <link rel="shortcut icon" href="../storage/uploads/Setting/8531752142302.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../storage/uploads/Setting/8531752142302.png">
+
+    <!-- css file  -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../assets/css/plugins.css"/>
+    <link rel="stylesheet" href="../assets/css/dataTables.css"/>
+    <link rel="stylesheet" href="../assets/css/dataTables.responsive.min.css"/>
+    <link rel="stylesheet" href="../assets/css/summernote/summernote-lite.min.css"/>
+    <link rel="stylesheet" href="../assets/scss/style.css@v=1.css"/>
+    <style>
+    :root {
+        
+        --brand-primary: #123b70;
+        --sidebar-bg:  #123b70;
+        --button: #f5dc3c;
+        --red: #123b70;
+        --red-rgb: 18, 59, 112;
+        --button-primary-color: #123b70;
+        --title-text: #121d35;
+        
+       --white: #ffffff;
+        --tertiary: #6afcef;
+        --white-10: rgba(255, 255, 255, 0.1);
+        --white-20: rgba(255, 255, 255, 0.2);
+        --white-90: rgba(255, 255, 255, 0.9);
+        --black: #000000;
+        --secondary: #f8f8f8;
+        --button-alt: #f5c000;
+        --title-text-75: rgba(18, 29, 53, 0.75);
+        --para-text: #636370;
+        --stroke: #efefef;
+        --stroke-2: #dddddd;
+        --stroke-3: #ead4d4;
+        --primary-light: #f3f0fb;
+        --red-light: #e8eff8;
+        --green: #14d971;
+        --btn-secondary: #d8d8d8;
+        --sidebar-divider: #6f40e0;
+        --neutrals-100: #e8ebed;
+        --success-100: #dcfce7;
+        --success-500: #22c55e;
+        --error-100: #fee2e2;
+        --error-500: #ef4444;
+        --warning-50: #fefce8;
+        --neutrals-100: #e8ebed;
+        --hold-text: #fe5dfe;
+        --hold-bg: #fcdcfb;
+        --refunded-text: #ef7744;
+        --refunded-bg: #fef3e2;
+        --gray-40: #9ca3af;
+        --gray-50: #6b7280;
+        --gray-90: #101827;
+        --dark-90: #111317;
+        --blue: #07076d;
+        --blue-alt: #06068d;
+        --form-label-text: #151515;
+        --form-border: #e8e8e8;
+        --secondary-bg: #f0f4fa;
+        --scroll-track: #efefef;
+        --scroll-thumb: #dadada;
+    }
+</style>
+        <script>document.addEventListener('submit',function(e){if((e.target.method||'get').toLowerCase()==='post'){e.preventDefault();e.stopImmediatePropagation();alert('This local copy preserves the public website. This action requires the original server and is unavailable offline.');}},true);</script>
+</head>
+
+<body
+    class="font-family-nunitoSans direction-ltr ">
+
+<input type="hidden" id="lang_code" value="en">
+    <div id="preloader">
+        <div id="preloader_status">
+            <img src="../storage/uploads/Setting/5261750946050.png" alt="Studylifter"/>
+        </div>
+    </div>
+        <div class="signLog-section">
+        <div class="right" data-background="../storage/uploads/Setting/8831731414261.png">
+            <a href="../index.html" class="logo"><img src="../storage/uploads/Setting/3631750946496.png"
+                    alt="" /></a>
+            <h4 class="title">
+                Become a Part of Studylifter: Your Global Learning Experience Starts Here!
+            </h4>
+        </div>
+        <div class="left">
+            <div class="wrap">
+                <div class="zMain-signLog-content">
+                    <div class="pb-30">
+                        <h4 class="fs-sm-36 fs-26 fw-600 lh-sm-46 lh-20 text-title-text pb-5">Sign in</h4>
+                                                    <p class="fs-18 fw-500 lh-28 text-para-text">Don’t have an account? <a
+                                    href="../register.html" class="text-brand-primary">Sign Up</a></p>
+                                            </div>
+                    <form method="POST" action="../login.html">
+                        <input type="hidden" name="_token" value="FPYmYE5I0P6Aac463sEUdigcBO2aFOVPU6pJc1Qe" autocomplete="off">                        <div class="row rg-20 pb-15">
+                            <div class="col-md-6">
+                                <div>
+                                    <label for="inputPhoneEmail" class="zForm-label">Email</label>
+                                    <input type="email" name="email" value=""
+                                        class="form-control zForm-control" id="inputPhoneEmail"
+                                        placeholder="Enter email address" />
+                                                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="">
+                                    <label for="inputPassword" class="zForm-label">Password</label>
+                                    <div class="passShowHide">
+                                        <input type="password" name="password"
+                                            class="form-control zForm-control passShowHideInput" id="inputPassword"
+                                            placeholder="Enter your password" />
+                                        <button type="button" toggle=".passShowHideInput"
+                                            class="toggle-password fa-solid fa-eye"></button>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pb-sm-35 pb-20 d-flex justify-content-end align-items-center flex-wrap g-10">
+                            <a href="../password/reset.html"
+                                class="fs-18 fw-500 lh-28 text-brand-primary text-decoration-underline">Forgot Password?</a>
+                        </div>
+                                                <input type="hidden" name="recaptcha_token" id="recaptcha_token">
+                        <button type="submit" class="flipBtn sf-flipBtn-primary w-100">Sign in</button>
+                    </form>
+                    
+                                            <div class="row pt-12 fs-14">
+                            <div class="col-md-12 mb-25">
+                                <div class="table-responsive login-info-table mt-3">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2" id="adminCredentialShow" class="login-info">
+                                                    <b>Admin :</b> <a href="mailto:admin@gmail.com" class="__cf_email__" data-cfemail="b5d4d1d8dcdbf5d2d8d4dcd99bd6dad8">[email&#160;protected]</a> | 123456
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" id="staffCredentialShow" class="login-info">
+                                                    <b>Staff:</b> <a href="mailto:staff@gmail.com" class="__cf_email__" data-cfemail="7d0e091c1b1b3d1a101c1411531e1210">[email&#160;protected]</a> |
+                                                    123456
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" id="consulterCredentialShow" class="login-info">
+                                                    <b>Consultant:</b> <a href="mailto:consultant@gmail.com" class="__cf_email__" data-cfemail="1d7e72736e6871697c73695d7a707c7471337e7270">[email&#160;protected]</a> |
+                                                    123456
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" id="studentCredentialShow" class="login-info">
+                                                    <b>Student :</b> <a href="mailto:student@gmail.com" class="__cf_email__" data-cfemail="d2a1a6a7b6b7bca692b5bfb3bbbefcb1bdbf">[email&#160;protected]</a> | 123456
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" id="affiliateCredentialShow" class="login-info">
+                                                    <b>Affiliate :</b> <a href="mailto:affiliate@gmail.com" class="__cf_email__" data-cfemail="ec8d8a8a8580858d9889ac8b818d8580c28f8381">[email&#160;protected]</a> |
+                                                    123456
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookie-consent-wrap shadow-lg">
+        <div class="js-cookie-consent cookie-consent fixed bottom-0 inset-x-0 pb-2 bg-white text-light">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="p-2 rounded-lg bg-yellow-100">
+            <div class="flex items-center justify-between flex-wrap">
+                <div class="w-0 flex-1 items-center hidden md:inline pt-2">
+                    <p class="ml-3 text-black cookie-consent__message">
+                                                    Demo Cookie Consent Text !!
+                                            </p>
+                </div>
+                <div class="mt-2 flex-shrink-0 w-full sm:mt-0 sm:w-auto">
+                    <button
+                        class="js-cookie-consent-agree fs-15 fw-500 lh-25 text-black py-10 px-26 bg-cdef84 bd-ra-12 hover-bg-one border-0">
+                        Allow cookies
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+        window.laravelCookieConsent = (function () {
+
+            const COOKIE_VALUE = 1;
+            const COOKIE_DOMAIN = window.location.hostname;
+
+            function consentWithCookies() {
+                setCookie('laravel_cookie_consent', COOKIE_VALUE, 7300);
+                hideCookieDialog();
+            }
+
+            function cookieExists(name) {
+                return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+            }
+
+            function hideCookieDialog() {
+                const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                for (let i = 0; i < dialogs.length; ++i) {
+                    dialogs[i].style.display = 'none';
+                }
+            }
+
+            function setCookie(name, value, expirationInDays) {
+                const date = new Date();
+                date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+                document.cookie = name + '=' + value
+                    + ';expires=' + date.toUTCString()
+                    + ';domain=' + COOKIE_DOMAIN
+                    + ';path=/'
+                    + ';samesite=lax';
+            }
+
+            if (cookieExists('laravel_cookie_consent')) {
+                hideCookieDialog();
+            }
+
+            const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+
+            for (let i = 0; i < buttons.length; ++i) {
+                buttons[i].addEventListener('click', consentWithCookies);
+            }
+
+            return {
+                consentWithCookies: consentWithCookies,
+                hideCookieDialog: hideCookieDialog
+            };
+        })();
+    </script>
+
+    </div>
+<!-- js file  -->
+
+<script src="../assets/js/jquery-3.7.1.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/plugins.js"></script>
+<script src="../assets/js/dataTables.js"></script>
+<script src="../assets/js/dataTables.responsive.min.js"></script>
+<script src="../assets/css/summernote/summernote-lite.min.js"></script>
+<script src="../assets/js/apexcharts.min.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../common/js/common.js"></script>
+
+
+    <script>
+        "use strict"
+        $('#adminCredentialShow').on('click', function() {
+            $('#inputPhoneEmail').val('admin@gmail.com');
+            $('#inputPassword').val('123456');
+        });
+        $('#staffCredentialShow').on('click', function() {
+            $('#inputPhoneEmail').val('staff@gmail.com');
+            $('#inputPassword').val('123456');
+        });
+        $('#consulterCredentialShow').on('click', function() {
+            $('#inputPhoneEmail').val('consultant@gmail.com');
+            $('#inputPassword').val('123456');
+        });
+        $('#studentCredentialShow').on('click', function() {
+            $('#inputPhoneEmail').val('student@gmail.com');
+            $('#inputPassword').val('123456');
+        });
+        $('#affiliateCredentialShow').on('click', function() {
+            $('#inputPhoneEmail').val('affiliate@gmail.com');
+            $('#inputPassword').val('123456');
+        });
+    </script>
+
+    
+<script>
+    var currencySymbol = "SR";
+    var currencyPlacement = "before";
+
+                
+    </script>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"aa70f9c2d4c2494d9d159103ab8f0b0d","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+              <div class="hero-banner-filterWrap">
+                    <div class="zTab-wrap">
+                        <ul class="nav nav-tabs zTab-reset zTab-one" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="universities-tab" data-bs-toggle="tab"
+                                        data-bs-target="#universities-tab-pane" type="button" role="tab"
+                                        aria-controls="universities-tab-pane"
+                                        aria-selected="true">Universities
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="courses-tab" data-bs-toggle="tab"
+                                        data-bs-target="#courses-tab-pane" type="button" role="tab"
+                                        aria-controls="courses-tab-pane" aria-selected="false">Subject
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="scholarships-tab" data-bs-toggle="tab"
+                                        data-bs-target="#scholarships-tab-pane" type="button" role="tab"
+                                        aria-controls="scholarships-tab-pane"
+                                        aria-selected="false">Scholarships
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="events-tab" data-bs-toggle="tab"
+                                        data-bs-target="#events-tab-pane" type="button" role="tab"
+                                        aria-controls="events-tab-pane" aria-selected="false">Events
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="universities-tab-pane" role="tabpanel"
+                             aria-labelledby="universities-tab" tabindex="0">
+                            <form class="searchForm" method="GET" action="universities-list.html">
+                                <div class="hero-banner-filterInut">
+                                    <div class="item">
+                                        <label for="inputStudyDestination" class="zForm-label">
+                                            Study Destination <span>*</span>
+                                        </label>
+                                        <input type="hidden" class="universityCountryRoute"
+                                               value="/studylifter.zainikthemes.com/universities">
+                                        <select class="country-select sf-select-checkbox" name="country[]">
+                                            <option class="d-none" disabled
+                                                    selected>Select Destination</option>
+                                                                                            <option value="1">Australia</option>
+                                                                                            <option value="2">United States</option>
+                                                                                            <option value="3">Canada</option>
+                                                                                            <option value="4">United Kingdom</option>
+                                                                                            <option value="5">Germany</option>
+                                                                                    </select>
+                                        <!-- Validation error message for country -->
+                                        <div class="error-message country-error text-danger d-none">
+                                            Please select a country.
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <label for="inputSelectSubjects" class="zForm-label">
+                                            Select University
+                                        </label>
+                                        <select name="university[]"
+                                                class="university-select sf-select-checkbox"></select>
+                                    </div>
+                                    <button type="submit" class="searchButton flipBtn sf-flipBtn-brand-alt">
+                                        <div class="d-none h-25 spinner-border w-25" role="status">
+                                            <span class="visually-hidden"></span>
+                                        </div>
+                                        Search
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="courses-tab-pane" role="tabpanel" aria-labelledby="courses-tab"
+                             tabindex="0">
+                            <form class="searchForm" method="GET" action="subject-list.html">
+                                <div class="hero-banner-filterInut hero-banner-filterInputThree">
+                                    <div class="item">
+                                        <label for="inputStudyDestination" class="zForm-label">
+                                            Study Destination <span>*</span>
+                                        </label>
+                                        <input type="hidden" class="universityCountryRoute"
+                                               value="/studylifter.zainikthemes.com/universities">
+                                        <select class="country-select sf-select-checkbox" name="country[]">
+                                            <option class="d-none" disabled
+                                                    selected>Select Destination</option>
+                                                                                            <option value="1">Australia</option>
+                                                                                            <option value="2">United States</option>
+                                                                                            <option value="3">Canada</option>
+                                                                                            <option value="4">United Kingdom</option>
+                                                                                            <option value="5">Germany</option>
+                                                                                    </select>
+                                        <!-- Validation error message for country -->
+                                        <div class="error-message country-error text-danger d-none">
+                                            Please select a country.
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <label for="inputSelectSubjects" class="zForm-label">
+                                            Select University
+                                        </label>
+                                        <select name="university[]"
+                                                class="university-select sf-select-checkbox"></select>
+                                    </div>
+                                    <div class="item">
+                                        <label for="inputStudyLevel" class="zForm-label">Study Level</label>
+                                        <select class="sf-select-checkbox" name="study_level[]">
+                                            <option class="d-none" selected
+                                                    disabled>Selected Study Level</option>
+                                                                                            <option value="1">Doctorate</option>
+                                                                                            <option value="2">Postgraduate</option>
+                                                                                            <option value="3">Undergraduate</option>
+                                                                                            <option value="4">Certificate</option>
+                                                                                            <option value="5">Diploma</option>
+                                                                                    </select>
+                                    </div>
+                                    <button type="submit" class="searchButton flipBtn sf-flipBtn-brand-alt">
+                                        <div class="d-none h-25 spinner-border w-25" role="status">
+                                            <span class="visually-hidden"></span>
+                                        </div>
+                                        Search
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="scholarships-tab-pane" role="tabpanel"
+                             aria-labelledby="scholarships-tab" tabindex="0">
+                            <form class="searchForm" method="GET" action="scholarship-list.html">
+                                <div class="hero-banner-filterInut">
+                                    <div class="item">
+                                        <label for="inputStudyDestination"
+                                               class="zForm-label">Study Destination
+                                            <span>*</span>
+                                        </label>
+                                        <select class="country-select sf-select-checkbox" name="country[]">
+                                            <option class="d-none" disabled
+                                                    selected>Select Destination</option>
+                                                                                            <option value="1">Australia</option>
+                                                                                            <option value="2">United States</option>
+                                                                                            <option value="3">Canada</option>
+                                                                                            <option value="4">United Kingdom</option>
+                                                                                            <option value="5">Germany</option>
+                                                                                    </select>
+                                        <!-- Validation error message for country -->
+                                        <div class="error-message country-error text-danger d-none">
+                                            Please select a country.
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <label for="inputStudyLevel" class="zForm-label">Study Level</label>
+                                        <select class="sf-select-checkbox" name="study_level[]">
+                                            <option class="d-none" selected
+                                                    disabled>Select Study Level</option>
+                                                                                            <option value="1">Doctorate</option>
+                                                                                            <option value="2">Postgraduate</option>
+                                                                                            <option value="3">Undergraduate</option>
+                                                                                            <option value="4">Certificate</option>
+                                                                                            <option value="5">Diploma</option>
+                                                                                    </select>
+                                    </div>
+                                    <button type="submit" class="searchButton flipBtn sf-flipBtn-brand-alt">
+                                        <div class="d-none h-25 spinner-border w-25" role="status">
+                                            <span class="visually-hidden"></span>
+                                        </div>
+                                        Search
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="events-tab-pane" role="tabpanel" aria-labelledby="events-tab"
+                             tabindex="0">
+                            <form class="searchForm" method="GET" action="event-list.html">
+                                <div class="hero-banner-filterInut hero-banner-filterInputThree">
+                                    <div class="item">
+                                        <label for="inputStudyDestination"
+                                               class="zForm-label">Study Destination
+                                            <span>*</span></label>
+                                        <input type="hidden" class="universityCountryRoute"
+                                               value="/studylifter.zainikthemes.com/universities">
+                                        <select class="country-select sf-select-checkbox" name="country[]">
+                                            <option class="d-none" disabled
+                                                    selected>Select Destination</option>
+                                                                                            <option value="1">Australia</option>
+                                                                                            <option value="2">United States</option>
+                                                                                            <option value="3">Canada</option>
+                                                                                            <option value="4">United Kingdom</option>
+                                                                                            <option value="5">Germany</option>
+                                                                                    </select>
+                                        <!-- Validation error message for country -->
+                                        <div class="error-message country-error text-danger d-none">
+                                            Please select a country.
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <label for="inputSelectSubjects" class="zForm-label">
+                                            Select University
+                                        </label>
+                                        <select name="university[]"
+                                                class="university-select sf-select-checkbox"></select>
+                                    </div>
+                                    <div class="item">
+                                        <label for="inputStudyLevel" class="zForm-label">Study Level</label>
+                                        <select class="sf-select-checkbox" name="study_level[]">
+                                            <option class="d-none" selected
+                                                    disabled>Select Study Level</option>
+                                                                                            <option value="1">Doctorate</option>
+                                                                                            <option value="2">Postgraduate</option>
+                                                                                            <option value="3">Undergraduate</option>
+                                                                                            <option value="4">Certificate</option>
+                                                                                            <option value="5">Diploma</option>
+                                                                                    </select>
+                                    </div>
+                                    <button type="submit" class="searchButton flipBtn sf-flipBtn-brand-alt">
+                                        <div class="d-none h-25 spinner-border w-25" role="status">
+                                            <span class="visually-hidden"></span>
+                                        </div>
+                                        Search
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                
